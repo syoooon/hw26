@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Gochi+Hand|Just+Another+Hand&display=swap" rel="stylesheet">
+	<title>mommy</title>
+	<style type="text/css">
+		@font-face { font-family: 'UhBeeJJIBBABBA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeJJIBBABBA.woff') format('woff'); font-weight: normal; font-style: normal; }
+		
+		body{height: 900px; margin: 0; padding:0; }
+		.wrap{width: 37400px;float: left; height: 1000px; margin: auto;}
+		body::-webkit-scrollbar { display: none;}
+		#main{}
+		#text_1{position: absolute; z-index: 5000; left: 25000px; font-size: 20px; top: 200px; opacity: 0;}
+		#text_mommy{position: absolute; z-index: 4000; left: 100px; top: 10px; font-size: 25px; color: black; animation: on 5s forwards;font-weight: normal; font-style: normal; font-family: 'UhBeeJJIBBABBA';width: 400px;}
+
+		#monitor{position: fixed; background: black; padding: 5px; top: 0; right: 0; color: white; width: 70px; height: 20px; font-size: 20px;z-index: 99999;opacity: 0;}
+		#past{opacity: 0.5;}
+		#past:hover{opacity: 1;}
+
+		@keyframes walk {
+ 	   0% { box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+ 	   	transform: translateY(0px); }
+    	50% { box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+ 	   	transform: translateY(-3px); }
+    	100% { box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+ 	   	transform: translateY(0px); }
+		}
+
+		@keyframes no{
+			from{opacity: 1;}
+			to{opacity: 0;}
+		}
+
+		@keyframes on{
+			from{opacity: 0;}
+			to{opacity: 1;}
+		}
+
+		@keyframes spl{
+			from{opacity: 0;}
+			to{opacity: 0.9;}
+		}
+
+		@keyframes on_1{
+			from{ top: 5%; opacity: 0; }
+			to{top: 8%; opacity: 1; }
+		}
+		@keyframes on_2{
+			from{ top: 8%; opacity: 1; }
+			to{top: 5%; opacity: 0; }
+		}
+
+		@keyframes on_3{
+			from{ opacity: 0; }
+			to{ opacity: 1; }
+		}
+
+		@keyframes on_4{
+			from{ top: 20%; opacity: 0; }
+			to{top: 18%; opacity: 1; }
+		}
+
+		img{display: block;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div id="monitor"></div>
+		
+		<img src="sound.png" style="position: fixed; z-index: 200; width: 40px; opacity: 0.3; top: 10px; left: 10px;" id="mu1" >
+		<audio src="music_.mp3" loop id="mu2"></audio>
+
+		<img src="1_back_2.png" style="position: absolute; z-index: 1;">
+			<div id="text_mommy">
+			<h2>About 'mommy'</h2>
+			<p>'mommy' is a story about one poor little boy.
+			<br>he has been being in denial since his mommy was dead.
+			<br>he went on a trip to find her 'living' mommy. 
+			</p>
+
+			</div>
+		<img src="chara.png" style="position: fixed; z-index: 100; top:60%;left: 20%; width: 150px; height: 330px; " id="main">
+		<img src="rain.gif" style="position: absolute;z-index: 2;left: 1400px;" >
+		<img src="1_front.png" style="position: absolute; top: 690px; left: 1300px; z-index: 999;">
+		
+		<div id="te1" style="position: absolute; z-index:101; top: 8%; left: 1500px; font-family: 'UhBeeJJIBBABBA'; font-size: 24px;  width: 400px; opacity: 1;">
+			<p>Today is the day that a funeral is held.
+			<br>and this is my first time to go to the funeral.
+			</p>
+		</div>
+
+		<div id="te2" style="position: absolute; z-index:101; top: 8%; left: 1500px; font-family: 'UhBeeJJIBBABBA'; font-size: 24px;  width: 400px; opacity: 0;">
+			<p>There were many weepers at the funeral.
+			<br>I don't know who sank into the grave, NEVER.
+			</p>
+		</div>
+
+		<div id="te3" style="position: absolute; z-index:102; top: 8%; left: 5550px; font-family: 'UhBeeJJIBBABBA'; font-size: 24px;  width: 400px; opacity: 0; color: white;">
+			<p>Papa?
+			<br>Did you see mommy?
+			<br>
+			</p>
+		</div>
+
+		<div id="te4" style="position: absolute; z-index:120; top:calc(50% - 100px); left: 21000px; font-family: 'UhBeeJJIBBABBA'; font-size: 24px;  width: 600px; opacity:0 ;">
+			<p>What's that?
+			<br>She is not a monster like that.
+			<br>I need to go to find her.
+			</p>
+		</div>
+
+		<div id="te5" style="position: absolute; z-index:121; top: 18%; left: 23300px; font-family: 'UhBeeJJIBBABBA'; font-size: 24px;  width: 400px; opacity: 0;">
+			<p>...To tell the truth, I already know where she is.
+			<br>But I wanna be in denial.
+			<br>Is there anything problems?
+			</p>
+		</div>
+
+		<div id="te6" style="position: absolute; z-index:121; top: 18%; left: 26000px; font-family: 'UhBeeJJIBBABBA'; font-size: 24px;  width: 400px; opacity: 0; color: white;">
+			<p>I just-
+			<br>OK.
+			<br>Now, It's a time <BR>to face the truth.
+			</p>
+		</div>
+
+		<div id="te7" style="position: absolute; z-index:121; top:calc(50% + 80px) ; left: 33250px; font-family: 'UhBeeJJIBBABBA'; font-size: 24px;  width: 400px;  text-align: right;">
+			<p>Hi, It's been a long time <br>to see you again.
+			<br>I've been looking for you <br>for a long time.
+			<br>
+			</p>
+		</div>
+
+		<div id="te8" style="position: absolute; z-index:121; top:calc(50% + 80px) ; left: 33250px; font-family: 'UhBeeJJIBBABBA'; font-size: 24px;  width: 400px; opacity: 0; text-align: right;">
+			<p> <br>
+			<br>I really miss you.
+			<br>Love you, mommy.
+			</p>
+		</div>
+
+		<div id="te9" style="position: absolute; z-index:121; top:calc(50% + 220px) ; left: 38400px; font-family: 'UhBeeJJIBBABBA'; font-size: 18px;  width: 800px; opacity: 1; text-align: right;">
+			<p> Copyright 2019. SY_J All rights reserved.
+			</p>
+		</div>
+		
+		<img src="line_1.png" style="position: absolute; z-index: 3; left: 3120px;">
+		<img src="line_2.png" style="position: absolute;z-index: 4; left: 8943px;">
+		<img src="line_last.png" style="position: absolute;z-index: 8; left: 35260px;">
+		<img src="line_3.png" style="position: absolute;z-index: 10; left: 17744px;">
+		<img src="line_4.png" style="position: absolute;z-index: 10; left: 21460px;">
+		<img src="line_5.png" style="position: absolute;z-index: 20; left: 24866px;height: 1080px;">
+		<img src="line_6.png" style="position: absolute;z-index: 19; left: 31658px; opacity: 1; height: 1080px;">
+
+		<img src="fa_back.png" style="position: absolute; left: 3600px; z-index: 3; height: 1080px;">
+		<img src="fa_front.png" style="position: absolute; left: 4400px; z-index: 102; top: 470px;">
+		<img src="mom_1.png" style="position: absolute; left: 4515px;z-index: 103; top: calc(50% - 310px);" id="m1">
+		<img src="mom_2.png" style="position: absolute; left: 4785px;z-index: 104; top: calc(50% - 108px);" id="m2">
+		<img src="mom_3.png" style="position: absolute; left: 5340px;z-index: 105; top:calc(50% - 370px);" id="m3">
+		<img src="tear.gif" style="position: absolute; left: 5245px;z-index: 106; top: 43%;">
+
+		<img src="2_back.png" style="position: absolute; left: 6155px; z-index: 2; height: 1080px;">
+		<img src="2_front.png" style="position: absolute;left: 8300px; z-index: 101;">
+		<img src="pic_1.png" style="position: absolute;left: 9000px; z-index: 5;">
+		<img src="mom_4.png" style="position: absolute;left: 10300px; z-index: 107; top: 50%;" id="m4">
+
+		<img src="pic_2.png" style="position: absolute;left: 11890px; z-index: 6;">
+		<img src="mom_4.png" style="position: absolute;left: 13180px; z-index: 108; top: 50%;" id="m5">
+
+		<img src="pic_3.png" style="position: absolute;left: 14810px; z-index: 7;">
+		<img src="mom_4.png" style="position: absolute;left: 16100px; z-index: 109; top: 50%;" id="m6">	
+		<img src="splatter.png" style="position: absolute;left: 15860px; z-index: 109; top: 15%; width: 600px; opacity: 0;" id="s1">
+
+
+			<div id="text_1">
+		</div>	
+		<img src="5_back.png" style="position: absolute; left: 17800px; z-index: 8; height: 1080px;">
+		<img src="5_1.png" style="position: absolute; left: 18600px; z-index: 9;" id="cu1">
+		<img src="5_fdt.png" style="position: absolute;left: 19530px; z-index: 10; height: 60px; top: calc(50% + 200px); animation: walk 1s infinite;" id="fdt" >
+		<img src="6_back.png" style="position: absolute; left: 22000px; z-index: 11; height: 1080px;">
+		<img src="6_front_2.png" style="position: absolute;left: 22350px; z-index: 110; top: calc(50% + 323px); ">
+		<img src="6_front_1.png" style="position: absolute;left: 23700px; z-index: 111; top: calc(50% - 442px);">
+
+		<img src="7_back.png" style="position: absolute; left: 25000px; z-index: 12; height: 1080px;">
+		<img src="7_front.png" style="position: absolute; left: 25000px; z-index: 112; height: 1080px;">
+		<img src="8_back.png" style="position: absolute; left: 28300px; z-index: 13; height: 1080px;">
+		<img src="2_front.png" style="position: absolute;left: 27700px; z-index: 113;">
+		<img src="8_front.png" style="position: absolute; left: 28300px; z-index: 114; top: calc(50% + 478px);">
+		<img src="2_front.png" style="position: absolute;left: 31050px; z-index: 115;">
+		
+		<img src="face.png" style="position: absolute;left: 29130px; z-index: 116; top: calc(50% + 380px); opacity: 0;" id="t1">
+		<img src="the.png" style="position: absolute;left: 29340px; z-index: 116; top: calc(50% - 200px); opacity: 0;" id="t2">
+		<img src="truth.png" style="position: absolute;left: 29530px; z-index: 116; top: calc(50% + 380px); opacity: 0;" id="t3">
+		<img src="and.png" style="position: absolute;left: 29820px; z-index: 116; top: calc(50% - 200px); opacity: 0;" id="t4">
+		<img src="accept.png" style="position: absolute;left: 29930px; z-index: 116; top: calc(50% + 380px);opacity: 0;" id="t5">
+		<img src="her.png" style="position: absolute;left: 30320px; z-index: 116; top: calc(50% - 200px);opacity: 0;" id="t6">
+		<img src="death.png" style="position: absolute;left: 30390px; z-index: 116; top: calc(50% + 380px); opacity: 0;" id="t7">
+
+		<img src="5_2.png" style="position: absolute; left: 32300px; z-index: 14; height: 1080px;">
+		<img src="last_back.png" style="position: absolute; left: 36300px; z-index: 15; height: 1080px;">
+		<img src="flower_before.png" style="position: absolute;left: 38090px; z-index: 117; top: calc(50% + 180px); opacity: 1;" id="f1">
+
+
+		<nav>
+			<ul>
+				<li><a href="#top">
+					<img src="tothepast.png" style="position: absolute; z-index: 130; width: 150px; left: 39100px; top: calc(50% + 320px);" id="past"></li>
+			</ul>
+		</nav>
+
+
+	</div>	
+
+
+
+	<script type="text/javascript">
+		window.onkeydown = function(){
+			if(event.keyCode == 37){
+				main.src = "walking_.gif";
+				main.style.transform = "rotateY(180deg)";
+			}
+			else if(event.keyCode == 39){
+				main.src = "walking_.gif";
+				main.style.transform = "rotateY(0deg)";
+
+			}
+			else if(event.keyCode == 40){
+				main.src = "cha_sit.png";
+			}
+			else if(event.keyCode == 38){
+				main.src = "jump_infinite.gif";
+				main.style.height = "450px";
+				main.style.top = "48%";
+			}
+		}
+		
+
+		window.onkeyup = function(){
+			if(event.keyCode == 40) {
+				main.src = "chara.png";
+			}else if(event.keyCode == 38){
+				main.src = "chara.png";
+				main.style.height = "330px";
+				main.style.top = "60%";
+			}else if(event.keyCode == 37){
+				main.src = "chara.png";
+			}else if(event.keyCode == 39){
+				main.src = "chara.png";
+			}
+		}
+
+		window.onscroll = function(){
+			var t = document.documentElement.scrollLeft + document.body.scrollLeft;
+			monitor.innerHTML = t.toFixed(1);
+
+			if (t > 500){te1.style.animation = "on_1 1s forwards";}
+			else{te1.style.animation = "";}
+			if (t > 1050){te1.style.animation = "on_2 1s forwards";}
+			else{te1.style.animation = "";}
+			if (t > 1080){te2.style.animation = "on_1 1s forwards";}
+			else{te2.style.animation = "";}
+			if (t > 4400){te3.style.animation = "on_1 1s forwards";}
+			else{te3.style.animation = "";}
+			if (t > 20300){te4.style.animation = "on_3 1s forwards";}
+			else{te4.style.animation = "";}
+			if (t > 22700){te5.style.animation = "on_4 1s forwards";}
+			else{te5.style.animation = "";}
+			if (t > 25400){te6.style.animation = "on_3 1s forwards";}
+			else{te6.style.animation = "";}
+			if (t > 33170){te7.style.animation = "no 1s forwards";}
+			else{te7.style.animation = "";}
+			if (t > 33170){te8.style.animation = "on_3 1s forwards";}
+			else{te8.style.animation = "";}
+
+
+			if (t > 3700){m1.style.animation = "no 1s forwards";}
+			else{m1.style.animation = "";}
+			if (t > 4000){m2.style.animation = "no 1s forwards";}
+			else{m2.style.animation = "";}
+			if (t > 4400){m3.style.animation = "no 1s forwards";}
+			else{m3.style.animation = "";}
+			//if (t > 9908){m4.style.animation = "no 0.7s forwards";}
+			//else{m4.style.animation = "";}
+			//if (t > 12428){m5.style.animation = "no 0.7s forwards";}
+			//else{m5.style.animation = "";}
+			if (t > 15320){m6.style.animation = "no 1s forwards";}
+			else{m6.style.animation = "";}
+
+			if (t > 15360){s1.style.animation = "spl 0.1s forwards";}
+			else{s1.style.animation = "";}
+			
+			if (t > 28620){t1.style.animation = "on 0.3s forwards";}
+			else{t1.style.animation = "";}
+			if (t > 28900){t2.style.animation = "on 0.3s forwards";}
+			else{t2.style.animation = "";}
+			if (t > 29130){t3.style.animation = "on 0.3s forwards";}
+			else{t3.style.animation = "";}
+			if (t > 29380){t4.style.animation = "on 0.3s forwards";}
+			else{t4.style.animation = "";}
+			if (t > 29540){t5.style.animation = "on 0.3s forwards";}
+			else{t5.style.animation = "";}
+			if (t > 29790){t6.style.animation = "on 0.3s forwards";}
+			else{t6.style.animation = "";}
+			if (t > 29990){t7.style.animation = "on 0.3s forwards";}
+			else{t7.style.animation = "";}
+
+
+		}
+
+		var astate = "off"
+		cu1.onclick = function(){
+			if(astate == "off"){
+				cu1.src = "5_2.png";
+				astate = "on";
+			}
+			else{
+				cu1.src = "5_1.png";
+				astate = "off";
+			}
+		}
+
+		var bstate = "off"
+		f1.onclick = function(){
+			if(bstate == "off"){
+				f1.src = "flower_after.png";
+				bstate = "on";
+			}
+			else{
+				f1.src = "flower_before.png";
+				bstate = "off";
+			}
+		}
+
+		var cstate = "off"
+		mu1.onclick = function(){
+			if (cstate == "off") {
+				mu1.style.opacity = "0.8";
+				mu2.play();
+				cstate = "on";
+			}
+			else{mu1.style.opacity = "0.3";
+				mu2.pause();
+				cstate = "off";
+			}
+
+
+		}
+	</script>
+
+
+</body>
+</html>
